@@ -50,6 +50,7 @@ function filterEntry($value)
                   'club' => $value['9'],
                   'nationality' => $value['28.6'],
                   'iffNumber' => $value['19'],
+                  'handedness' => $value['12'],
                   'membership'=> humanReadableMembership($value['7'])                
                );
 }
@@ -88,6 +89,7 @@ function memberLookup(){
        <td>Name</td>
        <td>Club</td>
        <td>Nationality</td>      
+       <td>Handedness</td>      
        <td>Membership Type</td>      
      </tr>
       <tr ng-show="search.length >= 3" ng-repeat="m in members | filter:search">
@@ -95,6 +97,7 @@ function memberLookup(){
        <td>{{m.prefix}} {{m.firstName}} {{m.lastName}}</td>
        <td>{{m.club}}</td>
        <td>{{m.nationality}}</td>      
+       <td>{{m.handedness}}</td>      
        <td>{{m.membership}}</td>      
      </tr>
    </table>     

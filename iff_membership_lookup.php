@@ -83,6 +83,7 @@ function memberLookup(){
  
   <div ng-app="lookup" ng-controller="controller">
    <input type="text" ng-model="search" placeholder="Type IFF Number, Club, Name etc">
+   <div class="pull-right">Showing {{ search.length >= 3 ? (members | filter:search).length : 0 }} of {{members.length}}</div>
    <table class="table table-bordered table-striped">
      <tr>
        <td>IFF Number</td>

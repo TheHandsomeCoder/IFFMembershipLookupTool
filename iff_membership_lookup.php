@@ -32,6 +32,11 @@ function getActiveMemberships($formID)
                 array(
                     'key' => '7',
                     'value' => 'Youth Membership (€0.00)|0'
+                ),
+                ,
+                array(
+                    'key' => '7',
+                    'value' => 'First Membership (€0.00)|0'
                 )
             )
         );

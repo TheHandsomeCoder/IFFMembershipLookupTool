@@ -71,6 +71,7 @@ function humanReadableMembership($value)
         'Life Membership (€300.00)|300' => 'Life Membership',
         'Adult Membership (€30.00)|30' => 'Adult Membership',
         'Associate Membership (€5.00)|5' => 'Associate Membership',
+        'First Membership (€0.00)|0' => 'First Membership',
         'Student Membership (€20.00)|20' => 'Student Membership'
     );
     

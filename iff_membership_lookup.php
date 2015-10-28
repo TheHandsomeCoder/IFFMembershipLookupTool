@@ -14,7 +14,7 @@ function getActiveMemberships($formID)
         
         $paging      = array(
             'offset' => 0,
-            'page_size' => 200
+            'page_size' => 300
         );
         $sorting     = array(
             'key' => '19',

@@ -3,7 +3,9 @@
 Plugin Name: IFF Membership Lookup
 Description: Plugin for displaying the current licecend members of the IFF
 Author: Scott O'Malley
-Version: 1.0
+Version: 1.2
+GitHub Plugin URI: https://github.com/thehandsomecoder/IFFMembershipLookupTool
+GitHub Branch:     master
 */
 //------------------------------------------
 

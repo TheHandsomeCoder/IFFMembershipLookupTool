@@ -8,13 +8,13 @@ Version: 1.0
 //------------------------------------------
 
 
-function getActiveMemberships($formID)
+function getActiveMemberships($formID, $pageSize)
 {
     if (class_exists("GFForms")) {
         
         $paging      = array(
             'offset' => 0,
-            'page_size' => 300
+            'page_size' => (int)$pageSize
         );
         $sorting     = array(
             'key' => '19',
@@ -82,11 +82,12 @@ function memberLookup($atts)
 {
     
     $attributes = shortcode_atts(array(
-        'formid' => ''
+        'formid' => '',
+        'pagesize' => ''
     ), $atts);
     
-    if ($attributes[formid] != '') {
-        $entires = getActiveMemberships($attributes['formid']);
+    if (($attributes[formid] != '') && ($attributes[pagesize] != '')) {
+        $entires = getActiveMemberships($attributes['formid'], $attributes['pagesize']);
         
         /* Turn on buffering */
         ob_start();

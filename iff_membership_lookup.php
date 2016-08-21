@@ -58,7 +58,7 @@ function filterEntry($value)
         'prefix' => $value['1.2'],
         'firstName' => $value['1.3'],
         'lastName' => $value['1.6'],
-        'club' => $value['9'],
+        'club' => ($value['31']) ? $value['31'] : $value['9'],
         'nationality' => $value['28.6'],
         'iffNumber' => $value['19'],
         'handedness' => $value['12'],
